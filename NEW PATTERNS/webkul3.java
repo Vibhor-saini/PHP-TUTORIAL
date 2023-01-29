@@ -1,0 +1,42 @@
+import java.util.*;
+class webkul3{
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+
+        if(n==1||n%2==0){
+            return ;
+        }
+        
+        for( int i = 1 ; i<= n ; i++){
+            for( int j = 1 ; j<=n ; j++){
+        
+        if(i<=n/2&&j<=i || i==n/2+1&&j<=n || i>=n/2+2 && j<=n-i+1 ){
+            System.out.print("*");
+        } 
+        else{
+            System.out.print(" ");
+        }  
+    }
+    
+    for(int j = n+1 ; j<= n+3 ;j++){  //10 , 11, 12
+        if( i==(n/2)+1 && j<=n+3 || i==n/2 && j==n+2 || i==(n/2)+2 && j==n+2 ){
+            System.out.print("*");
+        }
+        else{
+            System.out.print(" ");
+        }
+       // / * * *  /
+    }   
+    System.out.println();
+
+    }
+    }
+    }
+
+     
+
+
+   
+          
+
